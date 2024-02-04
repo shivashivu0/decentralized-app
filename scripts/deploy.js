@@ -12,6 +12,7 @@ async function main() {
   const assessment = await Assessment.deploy(initBalance);
   await assessment.deployed();
 
+
   console.log(`A contract with balance of ${initBalance} eth deployed to ${assessment.address}`);
 }
 
